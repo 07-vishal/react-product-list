@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #8e44ad, #1abc9c);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 900px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #f1c40f, #e74c3c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.search-input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: #2c3e50;
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.product-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px #00ffd5;
+}
+
+.product-card h3 {
+    margin: 0 0 10px;
+    color: #f1c40f;
+}
+
+.product-card p {
+    font-size: 0.95rem;
+    color: #ecf0f1;
+}
+
+.price {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #1abc9c;
+}
+
+.not-found {
+    text-align: center;
+    font-style: italic;
+}
